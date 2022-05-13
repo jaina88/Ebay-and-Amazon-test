@@ -35,8 +35,8 @@ public class ExplicitWaitConcept2 {
 		By password = By.name("j_password");
 	    By signin2 = By.xpath("//*[@class='button large js-set-session-storage btn-login']");
 	    By CustomerService = By.xpath("//*[@class='menu__sub-link']");
-	    		
-	    By Women = By.xpath("//*[@class='menu__super-link']");
+	    By StudentDiscount = By.xpath("//*[@class='menu__services__item']");		
+	   
 		
 		
 			//String title1 = waitForPageTitlePresent("https://www2.hm.com/en_us/index.html", 3);
@@ -50,7 +50,7 @@ public class ExplicitWaitConcept2 {
 	    waitForElementToBeLocated(password,5).sendKeys("12345");
 		waitForElementToBeLocated(signin2, 5).click();
 		waitForElementToBeLocated(CustomerService, 5).click();
-		waitForElementToBeLocated(Women, 1).click();
+		waitForElementToBeLocated(StudentDiscount, 5).click();
 		
 	}
 
